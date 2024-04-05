@@ -21,7 +21,7 @@ public class GamePiece
      */
     public GamePiece()
     {
-        setPiece(DEFAULT_PIECE);
+        this.piece = DEFAULT_PIECE;
     }
 
     /**
@@ -31,7 +31,8 @@ public class GamePiece
      */
     public GamePiece(char piece)
     {
-        setPiece(piece);
+        this.piece = piece;
+
     }
 
     /**
@@ -47,10 +48,14 @@ public class GamePiece
      *
      * @return Returns the character representing this game piece.
      */
+
     public char getPiece()
     {
-        return piece;
+        return this.piece;
+
     }
+
+
 
     /**
      * Sets the representation of this game piece to the character
@@ -70,7 +75,8 @@ public class GamePiece
      */
     public String toString()
     {
-        return ""+piece;
+        //return ""+piece;
+        return String.valueOf(piece);
     }
 
     @Override
